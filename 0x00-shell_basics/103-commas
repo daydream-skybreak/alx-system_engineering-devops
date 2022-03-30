@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -am -S -X
+ls -aSXmp --indicator-style=slash 
