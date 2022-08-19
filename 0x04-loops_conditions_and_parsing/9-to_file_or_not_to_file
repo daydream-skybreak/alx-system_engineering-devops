@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# checks whether or not the file "school" exists
+# checks if the the file is empty or not
+# checks if the file is regular or not
+
+fName="school"
+list=$(ls)
+if [ -e $fName ]
+then
+	echo "school file exists"
+	n=$(cat $fName | wc -l)
+	if [ $n -eq 0 ]
+	then
+		echo "school file is empty"
+	else
+		echo "school file is not empty"
+	fi
+	if [ -f $fName ]
+	then
+		echo "school is regular file"
+	fi
+else
+	echo "school file does not exist"
+fi
