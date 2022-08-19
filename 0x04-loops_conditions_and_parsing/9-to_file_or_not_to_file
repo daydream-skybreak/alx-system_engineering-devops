@@ -3,22 +3,21 @@
 # checks if the the file is empty or not
 # checks if the file is regular or not
 
-fName="school"
-list=$(ls)
-if [ -e $fName ]
+if [ -e "school" ]
 then
 	echo "school file exists"
-	n=$(cat $fName | wc -l)
-	if [ $n -eq 0 ]
+	if [ -s "school" ]
 	then
 		echo "school file is empty"
 	else
 		echo "school file is not empty"
 	fi
-	if [ -f $fName ]
+
+	if [ -f "school" ]
 	then
 		echo "school is regular file"
 	fi
+
 else
 	echo "school file does not exist"
 fi
