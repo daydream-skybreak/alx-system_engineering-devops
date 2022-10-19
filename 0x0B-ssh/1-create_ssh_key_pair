@@ -2,4 +2,4 @@
 # creates ssh keypair
 # private key saved on 'school'
 # passphrase: betty
-echo "school betty" | ssh-keygen
+ssh-keygen -b 4096 -f school -t rsa -N betty
