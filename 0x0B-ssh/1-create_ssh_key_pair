@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# creates ssh keypair
+# private key saved on 'school'
+# passphrase: betty
+echo "school betty" | ssh-keygen
